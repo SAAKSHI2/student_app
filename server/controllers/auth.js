@@ -23,6 +23,8 @@ export const login=async(req,res)=>{
 
         res.cookie("accessToken",token,{
              httpOnly:true,
+             sameSite: process.env.SAME_SITE,
+             secure: process.env.SECURE,
         }).status(200).json({message:"login successfully"});
     
       } catch (error) {
