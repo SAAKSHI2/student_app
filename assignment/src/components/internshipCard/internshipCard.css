@@ -1,0 +1,94 @@
+.internshipContainer{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+     .wrapper{
+        -webkit-box-shadow: 2px 2px 55px 8px rgba(140,135,140,1);
+        -moz-box-shadow: 2px 2px 55px 8px rgba(140,135,140,1);
+        box-shadow: 2px 2px 25px 8px rgba(140,135,140,1);
+        border: 1px solid lightgrey;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: 20px;
+        border-radius: 20px;
+        height: 250px;
+        width: 40vw;
+
+         
+
+         .details{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+             .info{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+
+                h1{
+                    color:gray;
+
+                }
+                p{
+                    color: rgb(86, 85, 85);
+
+                }
+
+             }
+
+             .companyLogo{
+                img{
+                    
+                    object-fit: cover;
+                    margin-top: 20px;
+                }
+
+             }
+
+         }
+         .otherInfo{
+            display: flex;
+            justify-content: space-between;
+
+             .right{
+                display: flex;
+                color:rgb(77, 75, 75);
+                p{
+                    padding-right: 10px;
+                }
+
+             }
+
+             .left{
+                /* cursor: pointer; */
+                z-index: 999;
+                button{
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: #3498db;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+    
+        
+                }
+        
+                button:hover{
+                        background-color: #2980b9;
+                        cursor: pointer;
+
+                 }
+
+
+             }
+
+         }
+     }
+    }
